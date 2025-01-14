@@ -1,0 +1,90 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Lier la police personnalisée */
+@font-face {
+    font-family: 'menuFont';
+    src: url('../assets/fonts/ShortStack-Regular.ttf') format('truetype');
+}
+
+/* Réinitialisation des styles de base */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Configuration de la largeur et gestion du débordement */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Variables CSS pour les couleurs */
+:root {
+    --vert-bleu: #B1F0EB;
+    --vert: #48C9B0;
+    --vert-dark: #005662;
+    --vert-card: #A9EFE3;
+    --black-green: #032A30;
+    --dark-green: #04292E;
+    --vert-light: #BDF7F2;
+}
+
+/* Style global pour le corps */
+body {
+    font-family: 'menuFont', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--black-green); /* Couleur du texte par défaut */
+    background-color: var(--vert-light); /* Couleur de fond */
+}
+
+ 
+body.modal-open {
+    background-color: transparent; /* Fond transparent pour le body */
+  }
+
+/* Lien actif */
+a.active {
+    background-color: #1D4ED8; /* Bleu de Tailwind */
+    color: white;
+  }
+  
+  /* Lien par défaut */
+  a:not(.active):hover {
+    background-color: #E5E7EB; /* Gris clair */
+    color: #1D4ED8; /* Bleu au survol */
+  }
+.fill{
+    transition: width 1s ease-in-out;
+}
+
+.progress div.fill{
+    width: 10%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.9s;
+}
+
+/* Lorsque la vidéo est ouverte, mettre l'arrière-plan transparent */
+#video-modal {
+    background-color: rgba(0, 0, 0, 0.7); /* Arrière-plan semi-transparent */
+  }
+  
+#video-player {
+max-height: 80vh; /* Limite la hauteur de la vidéo à 80% de la hauteur de la fenêtre */
+}
+
+/* Désactiver le hover sur mobile */
+@media (hover: none) and (pointer: coarse) {
+    .project .group:hover .absolute {
+      opacity: 0; /* Masque l'élément de description et le lien */
+    }
+  }
+  

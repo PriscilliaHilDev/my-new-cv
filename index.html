@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae de Priscillia Antonella Hillion - Développeuse Web et Mobile Junior, spécialisée en React Native et développement front-end.">
+    <meta name="author" content="Priscillia Antonella HILLION">
+    <meta property="og:image" content="https://curriculumvitae-priscillia-hillion.netlify.app/assets/images/resume.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Priscillia Antonella Hillion Curriculum Vitae">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="src/assets/images/resume.png" type="image/png">
+    <title>Priscillia Hillion Curriculum Vitae</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.5.2/dist/flowbite.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+
+  <!-- Contenu principal -->
+  <main class="flex-grow">
+      <section class="bg-purple-200 dark:bg-gray-900 w-full ">
+        <nav id="navbar">
+          <div class="flex justify-around items-center py-2" id="navbar-content">
+            <a href="/" class="active flex flex-col items-center hover:text-green-400">
+              <i class="fas fa-user text-base lg:text-lg xl:text-xl"></i>
+              <span class="text-[10px] sm:text-xs lg:text-sm xl:text-base hidden sm:block">Qui suis-je ?</span>
+            </a>
+            <a href="#parcours" class="flex flex-col items-center hover:text-green-400">
+              <i class="fas fa-briefcase text-base lg:text-lg xl:text-xl"></i>
+              <span class="text-[10px] sm:text-xs lg:text-sm xl:text-base hidden sm:block">Parcours</span>
+            </a>
+            <a href="#realisations" class="flex flex-col items-center hover:text-green-400">
+              <i class="fas fa-paint-brush text-base lg:text-lg xl:text-xl"></i>
+              <span class="text-[10px] sm:text-xs lg:text-sm xl:text-base hidden sm:block">Réalisations</span>
+            </a>
+           
+            <a href="src/assets/files/priscilliaHillion-cv.pdf" class="bg-green-500 p-2 w-[50px] sm:w-[70px] lg:w-[80px] xl:w-[100px] rounded-xl flex flex-col items-center shadow-md hover:bg-green-600">
+              <i class="fas fa-download text-base lg:text-lg xl:text-xl text-white"></i>
+              <span class="text-[10px] sm:text-xs lg:text-sm xl:text-base hidden sm:block">CV</span>
+            </a>
+          </div>
+        </nav>
+        
+          
+        <!-- Section principale avec image et description -->
+          <div class=" rounded-t-[50px] bg-red-100 p-6" id="main-content">
+            <div class="container mx-auto p-8">
+              <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <!-- Contenu portrait : Image et texte -->
+                <div class="flex flex-col items-center mb-6 md:mb-0">
+                  <!-- Image -->
+                  <img src="src/assets/images/prisHillion.jpeg" alt="Priscillia HILLION" class="rounded-full w-40 sm:w-48 md:w-64 lg:w-80 xl:w-96 mx-auto">
+                </div>
+                <div class="flex-1">
+                  <!-- Titre et sous-titre -->
+                  <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold">Conceptrice Développeuse Web/Mobile</h1>
+                  <h2 class="text-xl sm:text-2xl md:text-3xl">Priscillia HILLION</h2>
+                  <p class="mt-4 text-base sm:text-lg md:text-xl">
+                    Je suis constamment en quête de nouvelles opportunités pour apprendre et m'améliorer. Chaque défi est pour moi une chance de progresser, d'affiner mes compétences, et de grandir.
+                  </p>
+                  <!-- Réseaux sociaux -->
+                  <ul class="flex justify-center mt-4 space-x-6">
+                    <li>
+                      <a href="https://github.com/tonusername" target="_blank" class="text-gray-800 hover:text-blue-600">
+                        <i class="fab fa-github text-[24px] sm:text-[30px] md:text-[40px] lg:text-[50px] 2xl:text-[80px]"></i> <!-- Responsive -->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:tonemail@example.com" class="text-gray-800 hover:text-blue-600">
+                        <i class="fas fa-envelope text-[24px] sm:text-[30px] md:text-[40px] lg:text-[50px] 2xl:text-[80px]"></i> <!-- Responsive -->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/tonprofil" target="_blank" class="text-gray-800 hover:text-blue-600">
+                        <i class="fab fa-linkedin text-[24px] sm:text-[30px] md:text-[40px] lg:text-[50px] 2xl:text-[80px]"></i> <!-- Responsive -->
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+           <!-- section competences -->
+            <div>
+            <!-- titre competences-->
+          
+              
+            <div class="relative flex flex-col items-end p-8">
+              <div class="relative inline-block">
+                <h2 class="text-2xl sm:text-right text-center z-10 relative">
+                  Quelles sont mes connaissances techniques ?
+                </h2>
+                <span class="absolute bottom-0 left-0 w-full sm:w-full h-[12px] rounded-3xl bg-purple-300 z-0"></span>
+              </div>
+            </div>
+                
+          
+              <!-- fin titre competences-->
+              <!-- debut contenu Compétences techniques -->
+              <div class="container mx-auto py-8 w-full">
+                <!-- debut competence colonne 1 (langage informatique + frameworks) -->
+                <div class="flex flex-col lg:flex-row justify-around items-center gap-8">
+                  <!-- Langages informatiques -->
+                  <div class="bg-pink-300 sm:bg-purple-600 justify-center  flex flex-col">
+                    <div class="space-y-6 techno-skills">
+                      <!-- HTML -->
+                      <div class="pt-1 ">
+                          <div class="flex justify-between items-center mb-2">
+                              <span class="text-lg font-semibold">HTML</span>
+                              <span class="text-lg font-semibold">85%</span>
+                          </div>
+                          <div class="progress relative w-full bg-white rounded-lg shadow-sm h-5" data-progress="85">
+                              <div class="fill bg-green-500 h-full rounded-l-lg transition-all duration-1000 w-[85%]"></div>
+                          </div>
+                      </div>
+                  
+                      <!-- CSS -->
+                      <div class="pt-1">
+                          <div class="flex justify-between items-center mb-2">
+                              <span class="text-lg font-semibold">CSS</span>
+                              <span class="text-lg font-semibold">65%</span>
+                          </div>
+                          <div class="progress relative w-full bg-white rounded-lg shadow-sm h-5" data-progress="65">
+                              <div class="fill bg-green-500 h-full rounded-l-lg transition-all duration-1000 w-[65%]"></div>
+                          </div>
+                      </div>
+                  
+                      <!-- PHP -->
+                      <div class="pt-1">
+                          <div class="flex justify-between items-center mb-2">
+                              <span class="text-lg font-semibold">PHP</span>
+                              <span class="text-lg font-semibold">75%</span>
+                          </div>
+                          <div class="progress relative w-full bg-white rounded-lg shadow-sm h-5" data-progress="75">
+                              <div class="fill bg-green-500 h-full rounded-l-lg transition-all duration-1000 w-[75%]"></div>
+                          </div>
+                      </div>
+                  
+                      <!-- JavaScript -->
+                      <div class="pt-1">
+                          <div class="flex justify-between items-center mb-2">
+                              <span class="text-lg font-semibold">JavaScript</span>
+                              <span class="text-lg font-semibold">70%</span>
+                          </div>
+                          <div class="progress relative w-full bg-white rounded-lg shadow-sm h-5" data-progress="70">
+                              <div class="fill bg-green-500 h-full rounded-l-lg transition-all duration-1000 w-[70%]"></div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <!-- Frameworks / Technologies -->
+                  <div class="w-full p-6 rounded-lg  flex flex-col grow items-center justify-center">
+                    <h2 class="text-center text-green-400 text-xl font-semibold mb-6">Frameworks / Technologies</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                      <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                            <img src="src/assets/images/1200px-Laravel.svg.png" alt="Laravel" class="w-16 h-16 mb-4" />
+                            <h5 class="text-l font-semibold">Laravel 8-11</h5>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                            <img src="src/assets/images/vue.png" alt="VueJS" class="w-16 h-16 mb-4" />
+                            <h5 class="text-l font-semibold">VueJS 3</h5>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col items-center">
+                            <img src="src/assets/images/rn.png" alt="React Native" class="w-16 h-16 mb-4" />
+                            <h5 class="text-l font-semibold">React Native</h5>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                            <img src="src/assets/images/inertia.png" alt="InertiaJS" class="w-16 h-16 mb-4" />
+                            <h5 class="text-l font-semibold">InertiaJS</h5>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                            <img src="src/assets/images/Bootstrap_logo.png" alt="Bootstrap" class="w-16 h-16 mb-4" />
+                            <h5 class="text-l font-semibold">Bootstrap 5</h5>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                            <img src="src/assets/images/tailwinds.png" alt="TailwindCSS" class="w-16 h-16 mb-4" />
+                            <h5 class="text-l font-semibold">TailwindCSS</h5>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- fin competence colonne 1 (langage informatique + frameworks) -->
+                <!-- debut competence colonne 2 (outils + laguages parlé) -->
+                <div class="flex flex-col md:flex-row w-full items-center justify-between gap-8">
+                  <!-- début compétences outils -->
+                  <div class="w-full md:w-1/2 p-6 rounded-lg flex flex-col items-center justify-center">
+                    <h2 class="text-center text-green-400 text-xl font-semibold mb-6">Outils</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                      <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                        <img src="src/assets/images/git.png" alt="git" class="w-16 h-16 mb-4" />
+                        <h5 class="text-l font-semibold">Git</h5>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                        <img src="src/assets/images/myadmin.png" alt="PHP MyAdmin" class="w-16 h-16 mb-4" />
+                        <h5 class="text-l font-semibold">PHP MyAdmin</h5>
+                      </div>
+                      <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col items-center">
+                        <img src="src/assets/images/composer.png" alt="Composer" class="w-16 h-16 mb-4" />
+                        <h5 class="text-l font-semibold">Composer</h5>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                        <img src="src/assets/images/Figma-logo.svg" alt="Figma" class="w-16 h-16 mb-4" />
+                        <h5 class="text-l font-semibold">Figma</h5>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                        <img src="src/assets/images/sql.png" alt="SQL" class="w-16 h-16 mb-4" />
+                        <h5 class="text-l font-semibold">SQL</h5>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                        <img src="src/assets/images/firebase.png" alt="Firebase" class="w-16 h-16 mb-4" />
+                        <h5 class="text-l font-semibold">Firebase</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- fin compétences outils -->
+                
+                  <!-- début niveau linguistique -->
+                  <div class="w-full md:w-1/2 p-6 flex flex-col items-center justify-center">
+                    <h2 class="text-center text-xl font-semibold text-white mb-6">Niveau Linguistique</h2>
+                    <div class="lang mb-4 ">
+                      <h3 class="text-xl font-medium text-white">Français</h3>
+                      <p class="text-gray-300">Langue Maternelle</p>
+                    </div>
+                    <div class="lang mb-4 ">
+                      <h3 class="text-xl font-medium text-white">Anglais</h3>
+                      <p class="text-gray-300">Anglais technique</p>
+                    </div>
+                  </div>
+                  <!-- fin niveau linguistique -->
+                </div>
+                
+                <!-- fin competence colonne 2 (outils + laguages parlé) -->
+              </div>
+              <!-- fin contenu Compétences techniques -->
+            </div>
+          <!-- fin section competences -->
+          </div>
+      </section>
+  </main>
+
+
+    <!-- Footer fixé en bas -->
+    <footer class="bg-gray-900 text-white py-8 mt-auto">
+      <div class="max-w-screen-xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <!-- Section gauche : Localisation avec icône -->
+          <div class="flex items-center space-x-4">
+            <i class="fa-solid fa-location-pin text-white w-6 h-6"></i>
+            <p class="text-sm"><span class="font-semibold">Les Trois Ilets, Martinique</span></p>
+          </div>
+
+          <!-- Section centrale : Message ou petite citation -->
+          <div class="mt-4 md:mt-0 text-center md:text-left">
+            <p class="text-sm font-light">"Prête à m'investir à vos côtés !"</p>
+          </div>
+
+          <!-- Section droite : Copyright -->
+          <div class="mt-4 md:mt-0 text-center">
+            <p class="text-sm">&copy; 2025 Tous droits réservés.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <script type="module" src="src/js/app.js" defer></script>
+</body>
+</html>

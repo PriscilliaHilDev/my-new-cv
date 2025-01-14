@@ -1,0 +1,68 @@
+<div class="relative flex flex-col items-center p-8">
+  <div class="relative inline-block">
+    <h2 class="text-2xl text-center z-10 relative">
+      Exploration de Projets Personnels
+    </h2>
+    <span class="absolute bottom-0 w-full h-[12px] rounded-3xl bg-purple-300 z-0"></span>
+  </div>
+</div>
+
+<div class="flex items-center justify-center min-h-[50vh]">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-items-center w-full max-w-screen-lg" id="projects-grid">
+    <!-- Card 1 -->
+    <div class="project relative group" data-category="shoes">
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="Shoes">
+      <div class="absolute inset-0 bg-pink-500 bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+        <p class="text-white text-lg mb-4">Découvrez nos chaussures !</p>
+        <a href="#" class="play-video text-white underline text-sm" data-video="src/assets/videos/crud-app.mp4">Voir la vidéo</a>
+      </div>
+    </div>
+    
+    
+
+    <!-- Card 2 -->
+    <div class="project relative group" data-category="shoes">
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="Shoes">
+      <div class="absolute inset-0 bg-pink-500 bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+        <p class="text-white text-lg mb-4">Découvrez nos chaussures !</p>
+        <a href="#" class="play-video text-white underline text-sm" data-video="src/assets/videos/crud-app.mp4">Voir la vidéo</a>
+      </div>
+    </div>
+    
+    <!-- Card 3 -->
+    <div class="project relative group" data-category="shoes">
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="Shoes">
+      <div class="absolute inset-0 bg-pink-500 bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+        <p class="text-white text-lg mb-4">Découvrez nos chaussures !</p>
+        <a href="#" class="play-video text-white underline text-sm" data-video="src/assets/videos/crud-app.mp4">Voir la vidéo</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Vidéo Modal -->
+<div id="video-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+  <div class="relative bg-transparent p-4 max-w-4xl w-full mx-auto rounded-lg shadow-lg">
+    <button id="close-modal" class="absolute top-0 right-0 p-2 text-white bg-red-500 hover:bg-red-700 rounded-full">
+      <i class="fas fa-times"></i> <!-- Icone de fermeture -->
+    </button>
+    <video id="video-player" class="h-auto w-full max-w-4xl rounded-lg" controls>
+      <source id="video-source" src="" type="video/mp4">
+      Votre navigateur ne prend pas en charge la balise vidéo.
+    </video>
+  </div>
+</div>
+
+
+
+<!-- pour les catégories de filtres-->
+<!--
+<div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+  <button type="button" class="filter-btn text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800" data-category="all">All categories</button>
+  <button type="button" class="filter-btn text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" data-category="shoes">Shoes</button>
+  <button type="button" class="filter-btn text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" data-category="bags">Bags</button>
+  <button type="button" class="filter-btn text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" data-category="electronics">Electronics</button>
+  <button type="button" class="filter-btn text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" data-category="gaming">Gaming</button>
+</div>
+-->
