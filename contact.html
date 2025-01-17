@@ -1,0 +1,46 @@
+<div class="relative flex flex-col items-center p-8">
+    <div class="relative inline-block mb-10"> <!-- Ajout de mb-8 pour l'espace entre le titre et les cartes -->
+      <h2 class="md:text-2xl sm:text-[22px] text-xl text-center z-10 relative">
+        Exploration de mes projets personnels
+      </h2>
+      <span class="absolute bottom-0 w-full h-[12px] rounded-3xl bg-purple-300 z-0"></span>
+    </div>
+  </div>
+  
+
+<div class="flex justify-center">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8 items-stretch justify-items-center" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+        <!-- Carte E-mail -->
+        <a href="mailto:tonemail@example.com" class="text-lg text-blue-600">
+            <div class="w-full h-full bg-white shadow-lg rounded-lg p-6  transition-shadow duration-300 flex flex-col justify-between">
+                <div class="flex flex-col justify-center items-center space-x-4 mb-4">
+                    <h2 class="text-xl font-semibold">Par EMAIL</h2>
+                    <i class="fas fa-envelope text-[80px] text-gray-700"></i>
+                </div>
+                <p class="text-lg text-gray-700 mb-4 text-center">Vous pouvez me contacter directement à mon adresse email en cliquant ici.</p>
+            </div>
+        </a>
+
+        <!-- Carte LinkedIn -->
+        <a href="https://www.linkedin.com/in/tonprofil" target="_blank" class="text-lg text-blue-600">
+            <div class="w-full h-full bg-white shadow-lg rounded-lg p-6 transition-shadow duration-300 flex flex-col justify-between">
+                <div class="flex flex-col justify-center items-center space-x-4 mb-4">
+                    <h2 class="text-xl font-semibold">Via LINKEDIN</h2>
+                    <i class="fab fa-linkedin text-[80px] text-blue-600"></i>
+                </div>
+                <p class="text-lg text-gray-700 mb-4 text-center">Connectez-vous avec moi sur LinkedIn pour échanger et collaborer sur des projets professionnels.</p>
+            </div>
+        </a>
+
+        <!-- Carte GitHub -->
+        <a href="https://github.com/tonusername" target="_blank" class="text-lg text-blue-600">
+            <div class="w-full h-full bg-white shadow-lg rounded-lg p-6  transition-shadow duration-300 flex flex-col justify-between">
+                <div class="flex flex-col justify-center items-center space-x-4 mb-4">
+                    <h2 class="text-xl font-semibold">VIA GITHUB</h2>
+                    <i class="fab fa-github text-[80px] text-gray-700"></i>
+                </div>
+                <p class="text-lg text-gray-700 mb-4 text-center">Découvrez mes projets de développement sur GitHub, et n'hésitez pas à explorer mon code source.</p>
+            </div>
+        </a>
+    </div>
+</div>

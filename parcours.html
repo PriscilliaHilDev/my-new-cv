@@ -1,182 +1,203 @@
 <div class="relative flex flex-col items-center p-8">
-    <div class="relative inline-block">
-        <h2 class="text-2xl text-center z-10 relative">
+    <div class="relative inline-block mb-10">
+        <h2 class="md:text-2xl sm:text-[22px] text-xl text-center z-10 relative">
             Résumé de mon évolution professionnelle et de mon parcours de formation
         </h2>
         <span class="absolute bottom-0 w-full h-[12px] rounded-3xl bg-purple-300 z-0"></span>
     </div>
 </div>
 
-<div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-    <ul class="flex justify-center space-x-8 text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-        <li role="presentation">
-            <button class="inline-block w-48 p-4 border-b-2 rounded-t-lg bg-purple-100 hover:bg-purple-200 dark:bg-purple-600 dark:hover:bg-purple-700" id="experiences-styled-tab" data-tabs-target="#styled-experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">
-                Expériences
-            </button>
-        </li>
-        <li role="presentation">
-            <button class="inline-block w-48 p-4 border-b-2 rounded-t-lg bg-purple-100 hover:bg-purple-200 dark:bg-purple-600 dark:hover:bg-purple-700" id="diplomes-styled-tab" data-tabs-target="#styled-diplomes" type="button" role="tab" aria-controls="diplomes" aria-selected="false">
-                Diplômes
-            </button>
-        </li>
+<div class="mb-4">
+    <ul 
+      class="flex justify-center space-x-4 text-sm font-medium text-center" 
+      id="default-styled-tab" 
+      data-tabs-toggle="#default-styled-tab-content"
+      role="tablist"
+    >
+      <li role="presentation">
+        <button 
+          class="inline-block w-48 p-4 rounded-sm bg-purple-100 hover:bg-purple-200 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none"
+          id="experiences-styled-tab"
+          data-tabs-target="#styled-experiences"
+          type="button"
+          role="tab"
+          aria-controls="experiences"
+          aria-selected="false"
+        >
+          Professionnelles
+        </button>
+      </li>
+      <li role="presentation">
+        <button 
+          class="inline-block w-48 p-4 rounded-sm bg-purple-100 hover:bg-purple-200 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none"
+          id="diplomes-styled-tab"
+          data-tabs-target="#styled-diplomes"
+          type="button"
+          role="tab"
+          aria-controls="diplomes"
+          aria-selected="false"
+        >
+          Académiques
+        </button>
+      </li>
     </ul>
-</div>
+  </div>
+  
 
 <div id="default-styled-tab-content">
-    <div class="hidden rounded-lg dark:bg-gray-800" id="styled-experiences" role="tabpanel" aria-labelledby="experiences-styled-tab">
-        <div class="container mx-auto flex flex-col mb-8 py-8">
-            <!-- Première expérience -->
-            <div class="border bg-gray-50 rounded-md mb-4">
-                <div class="p-5 bg-pink-100 text-left">
-                    <h3 class="text-lg lg:text-xl  font-semibold">
-                        Développeuse Full-Stack en Full Remote chez 
-                        <a href="https://www.linkedin.com/company/globalstim/" target="_blank" class="text-pink-600">Globalstim</a>
-                        <span> - 1 an</span>
-                    </h3>
-                </div>
-                <div class="p-5">
-                    <p class="text-sm sm:text-base md:text-lg text-center">Reprise d'un code existant avec création, modification et amélioration de fonctionnalités.</p>
-                </div>
-                <div class="p-5 border-t-0 flex flex-col md:flex-row">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="text-sm lg:text-base text-gray-500 dark:text-gray-400 font-semibold mb-2">1. Développement du tableau de bord de l'application mobile</h4>
-                        <ul class="list-inside pl-6 text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 space-y-2">
-                            <li>- Création et gestion des interfaces avec Laravel, InertiaJS, ReactJS et BackPack.</li>
-                            <li>- Gestion de la base de données via Eloquent.</li>
-                            <li>- Exportation des données au format Excel grâce à la bibliothèque maatwebsite/excel.</li>
-                        </ul>
-                        <h4 class="text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">2. Développement Mobile</h4>
-                        <ul class="list-inside pl-6 text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 space-y-2">
-                            <li>- Reprise et création de composants React Native pour Android.</li>
-                            <li>- Exploitation de l'architecture Redux pour la gestion de l'état.</li>
-                            <li>- Utilisation d'Apollo Client pour intégrer les données back-end via GraphQL.</li>
-                        </ul>
-                        <h4 class="text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">3. Méthode Agile</h4>
-                        <ul class="list-inside pl-6 text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 space-y-2">
-                            <li>- Organisation des tâches et suivi des sprints avec Trello.</li>
-                            <li>- Suivi des projets via des échanges réguliers sur Discord.</li>
-                            <li>- Collaboration sur GitLab pour la gestion des versions et des tâches.</li>
-                        </ul>
+        <!-- Premier onglet expériences -->
+
+        <div class="hidden rounded-lg dark:bg-gray-800" id="styled-experiences" role="tabpanel" aria-labelledby="experiences-styled-tab">
+            <div class="container mx-auto flex flex-col mt-12">
+                <!-- Première expérience -->
+                <div class="border bg-gray-50 rounded-md mb-4">
+                    <div class="p-5 bg-pink-100 text-left">
+                        <h3 class="text-md sm:text-lg font-semibold">
+                            Développeuse Full-Stack en Full Remote chez 
+                            <a href="https://www.linkedin.com/company/globalstim/" target="_blank" class="text-pink-600">Globalstim</a>
+                            <span> - 1 an</span>
+                        </h3>
                     </div>
-                    <div class="w-full md:w-1/2 px-8">
-                        <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Environnement de travail</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/1200px-Laravel.svg.png" alt="Laravel" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">Laravel 8</h4>
+                    <div class="p-5">
+                        <p class="text-base sm:text-md text-center">Reprise d'un code existant avec création, modification et amélioration de fonctionnalités.</p>
+                    </div>
+                    <div class="p-5 border-t-0 flex flex-col md:flex-row items-center justify-center">
+                        <div class="w-full md:w-1/2 px-4">
+                            <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement du tableau de bord</h4>
+                            <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
+                                <li>- Création et gestion des interfaces avec Laravel, InertiaJS, ReactJS et BackPack.</li>
+                                <li>- Gestion de la base de données via Eloquent.</li>
+                                <li>- Exportation des données au format Excel.</li>
+                            </ul>
+                            <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement Mobile</h4>
+                            <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
+                                <li>- Reprise et création de composants React Native pour Android.</li>
+                                <li>- Exploitation de l'architecture Redux pour la gestion de l'état.</li>
+                                <li>- Utilisation d'Apollo Client pour intégrer les données via GraphQL.</li>
+                            </ul>
+                            <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Méthode Agile</h4>
+                            <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
+                                <li>- Organisation des tâches avec Trello.</li>
+                                <li>- Suivi des projets sur Discord.</li>
+                                <li>- Collaboration sur GitLab pour la gestion des versions.</li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/2 px-8">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4 md:py-0 py-8 text-center">Environnement de travail</h3>
+                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/1200px-Laravel.svg.png" alt="Laravel" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Laravel 8</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/rn.png" alt="React Native" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">React Native</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/reactjs.png" alt="ReactJS" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">ReactJS</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/graphQL.png" alt="GraphQL" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">GraphQL</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/inertia.png" alt="InertiaJS" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">InertiaJS</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/backpack.png" alt="BackPack 4" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">BackPack 4</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/discord-logo.png" alt="Discord" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Discord</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/gitlab.svg" alt="GitLab" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">GitLab</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/trello-logo.png" alt="Trello" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Trello</h4>
+                                </div>
                             </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/rn.png" alt="React Native" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">React Native</h4>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/reactjs.png" alt="ReactJS" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">ReactJS</h4>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/graphQL.png" alt="GraphQL" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">GraphQL</h4>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/inertia.png" alt="InertiaJS" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">InertiaJS</h4>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/backpack.png" alt="BackPack 4" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">BackPack 4</h4>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/discord-logo.png" alt="Discord" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">Discord</h4>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/gitlab.svg" alt="GitLab" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">GitLab</h4>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                                <img src="src/assets/images/trello-logo.png" alt="Trello" class="w-16 h-16 mx-auto mb-4">
-                                <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">Trello</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deuxième expérience -->
+                <div class="border bg-gray-50 rounded-md mb-4">
+                    <div class="p-5 bg-pink-100 text-left">
+                        <h3 class="text-md sm:text-lg font-semibold">
+                            Stagiaire en Développement Web Full-Stack chez 
+                            <a href="https://www.linkedin.com/company/whaaat-studio" target="_blank" class="text-pink-600">Whaaat Studio</a>
+                            <span> - 3 mois</span>
+                        </h3>
+                    </div>
+                    <div class="p-5">
+                        <p class="text-base sm:text-md text-center">Reprise d'un code existant avec création de nouvelles fonctionnalités.</p>
+                    </div>
+                    <div class="p-5 border-t-0 flex flex-col md:flex-row items-center justify-center">
+                        <div class="w-full md:w-1/2 px-4">
+                            <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement Back-End et Front-End</h4>
+                            <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
+                                <li>- Création d'administrateurs avec envoi automatique de mails.</li>
+                                <li>- Gestion du panier utilisateur et génération de coupons PDF avec QR Code.</li>
+                                <li>- Développement de la pagination dynamique avec Ajax.</li>
+                                <li>- Filtrage des produits par catégories avec Ajax.</li>
+                            </ul>
+                            <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement Front-End avec React Native</h4>
+                            <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
+                                <li>- Reproduction des écrans de l'application mobile.</li>
+                                <li>- Intégration de Redux pour la gestion d'état.</li>
+                            </ul>
+                            <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Méthode Agile</h4>
+                            <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
+                                <li>- Suivi des projets avec communications sur Discord.</li>
+                                <li>- Collaboration sur Bitbucket pour la gestion des versions.</li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/2 px-8">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4 md:py-0 py-8 text-center">Environnement de travail</h3>
+                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/symfony.svg" alt="Symfony" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Symfony 5</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/reactjs.png" alt="ReactJS" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">ReactJS</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/bitbucket-logo.png" alt="Bitbucket" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Bitbucket</h4>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
+                                    <img src="src/assets/images/discord-logo.png" alt="Discord" class="w-16 h-16 mx-auto mb-4">
+                                    <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Discord</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
-            <!-- Deuxième expérience -->
-            <div class="border bg-gray-50 rounded-md mb-4">
-                <div class="p-5 bg-pink-100 text-left">
-                  <h3 class="text-lg sm:text-xl md:text-2xl font-semibold">
-                    Stagiaire en Développement Web Full-Stack
-                    <a href="https://www.linkedin.com/company/whaaat-studio" target="_blank" class="text-pink-600">Whaaat Studio</a>
-                    <span> - 3 mois</span>
-                  </h3>
-                </div>
-                <div class="p-5">
-                  <p class="text-sm sm:text-base md:text-lg text-center">Reprise d'un code existant avec création de nouvelles fonctionnalités.</p>
-                </div>
-                <div class="p-4 border-t-0 flex flex-col md:flex-row">
-                  <div class="w-full md:w-1/2">
-                    <h4 class="text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 font-semibold mb-2">1. Développement Back-End et Front-End d'un site E-Commerce avec Symfony</h4>
-                    <ul class="list-inside pl-6 text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 space-y-2">
-                      <li>- Création des administrateurs avec envoi automatique de mails.</li>
-                      <li>- Gestion du panier utilisateur sur le site web.</li>
-                      <li>- Génération de coupons au format PDF, avec QR Code pour identification.</li>
-                      <li>- Création de factures au format PDF pour chaque commande.</li>
-                      <li>- Développement d'une pagination dynamique en JavaScript, avec un intervalle de 5 pages, utilisant Ajax.</li>
-                      <li>- Filtrage des produits par catégories via Ajax.</li>
-                    </ul>
-              
-                    <h4 class="text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">2. Développement Front-End avec React Native (Expo CLI) pour Android</h4>
-                    <ul class="list-inside pl-6 text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 space-y-2">
-                      <li>- Reproduction fidèle des écrans de l'application mobile.</li>
-                      <li>- Intégration de l'architecture Redux pour la gestion d'état.</li>
-                    </ul>
-              
-                    <h4 class="text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">3. Méthode Agile</h4>
-                    <ul class="list-inside pl-6 text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 space-y-2">
-                      <li>- Suivi des projets avec des communications régulières sur Discord.</li>
-                      <li>- Collaboration sur Bitbucket pour la gestion des versions et des tâches.</li>
-                    </ul>
-                  </div>
-              
-                  <div class="w-full md:w-1/2">
-                    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Environnement de travail</h3>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                      <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                        <img src="src/assets/images/symfony.svg" alt="Symfony" class="w-16 h-16 mx-auto mb-4">
-                        <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">Symfony 5</h4>
-                      </div>
-                      <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                        <img src="src/assets/images/rn.png" alt="React Native" class="w-16 h-16 mx-auto mb-4">
-                        <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">React Native</h4>
-                      </div>
-                      <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                        <img src="src/assets/images/discord-logo.png" alt="Discord" class="w-16 h-16 mx-auto mb-4">
-                        <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">Discord</h4>
-                      </div>
-                      <div class="bg-white p-4 rounded-lg shadow-md dark:bg-gray-800 dark:text-white">
-                        <img src="src/assets/images/bitbucket-icon.png" alt="Bitbucket" class="w-16 h-16 mx-auto mb-4">
-                        <h4 class="text-sm sm:text-base md:text-lg text-center font-semibold">Bitbucket</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
         </div>
-    </div>
+        
     
 
     <!-- Deuxième onglet de Diplômes -->
     <div class="hidden rounded-lg dark:bg-gray-800" id="styled-diplomes" role="tabpanel" aria-labelledby="diplomes-styled-tab">
-        <div class="border container mx-auto rounded-md pb-20 bg-purple-200">
+        <div class="border container mx-auto rounded-md pb-20 mt-10">
             <div class="flex flex-col items-center ">
                 <!-- Titre avec fond coloré -->
                 <div class="w-full bg-pink-300 rounded-t-md  p-8 shadow-md text-center">
-                    <h2 class="text-3xl font-semibold text-gray-800">Diplome & titres professionnels</h2>
+                    <h3 class="text-md sm:text-lg  font-semibold">
+                        Diplome et titres professionnels
+                    </h3>
                 </div>
         
-                <div class="relative py-8 ">
+                <div class="relative py-10 ">
                     <!-- Barre verticale -->
                     <div class="absolute left-4 transform -translate-x-1/2 h-full border-l-8 border-gray-300"></div>
         

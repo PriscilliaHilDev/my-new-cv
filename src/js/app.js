@@ -5,27 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   function updateActiveLink() {
     const links = document.querySelectorAll("#navbar-content > a"); // Sélectionne tous les liens dans la barre de navigation
-    const currentHash = window.location.hash || "#home"; // Utilise le hash de l'URL ou "#home" par défaut si aucun hash n'est présent.
+    const currentHash = window.location.hash || "/"; // Utilise le hash de l'URL ou "/" si aucun hash n'est présent.
 
+    console.log(links)
     // Réinitialiser la classe "active" sur tous les liens
     links.forEach(link => link.classList.remove("active"));
 
-    if (currentHash !== "#home") {
-      // Si le hash n'est pas "#home", activer uniquement le lien correspondant au hash
-      links.forEach(link => {
-        if (currentHash === link.getAttribute("href")) {
-          link.classList.add("active"); // Ajoute la classe "active" au lien correspondant
-        }
-      });
+    if (currentHash === "/") {
+        // Si le hash est "/" (page d'accueil), activer le lien d'accueil
+        links.forEach(link => {
+            if (link.getAttribute("href") === "/") {
+                link.classList.add("active"); // Ajoute la classe "active" au lien d'accueil
+            }
+        });
     } else {
-      // Si le hash est "#home", activer le lien de la page d'accueil
-      links.forEach(link => {
-        if (link.getAttribute("href") === "/") {
-          link.classList.add("active"); // Ajoute la classe "active" au lien d'accueil
-        }
-      });
+        // Si un hash est présent, activer le lien correspondant au hash
+        links.forEach(link => {
+            if (link.getAttribute("href") === currentHash) {
+                link.classList.add("active"); // Ajoute la classe "active" au lien correspondant au hash
+            }
+        });
     }
-  }
+}
+  
 
   /**
    * SECTION 2: Filtrage des projets
@@ -121,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   function handleHashChange(hash) {
     const currentHash = hash.replace("#", "").trim(); // Extrait le nom de la page depuis le hash
-    const validHashes = ["realisations", "parcours"]; // Liste des hashes valides
+    const validHashes = ["realisations", "parcours", "contact"]; // Liste des hashes valides
 
     if (validHashes.includes(currentHash)) {
       loadPage(currentHash); // Charge la page correspondant au hash

@@ -50,16 +50,26 @@ body.modal-open {
   }
 
 /* Lien actif */
+
 a.active {
-    background-color: #1D4ED8; /* Bleu de Tailwind */
-    color: white;
-  }
+  color: #EC4899;
+}
+
+a:not(.active) {
+  color: #1D4ED8;
+  border: none;
+}
+
+a:not(.active):hover {
   
-  /* Lien par défaut */
-  a:not(.active):hover {
-    background-color: #E5E7EB; /* Gris clair */
-    color: #1D4ED8; /* Bleu au survol */
-  }
+  border: none;
+  transition: color 0.3s ease;
+}
+
+
+
+
+  
 .fill{
     transition: width 1s ease-in-out;
 }
