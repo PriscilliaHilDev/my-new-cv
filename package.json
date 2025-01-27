@@ -1,0 +1,43 @@
+{
+  "name": "my-new-cv",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "braces": "^3.0.3",
+    "detect-libc": "^1.0.3",
+    "enhanced-resolve": "^5.18.0",
+    "fill-range": "^7.1.1",
+    "graceful-fs": "^4.2.11",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "lightningcss": "^1.29.1",
+    "lightningcss-darwin-arm64": "^1.29.1",
+    "micromatch": "^4.0.8",
+    "mri": "^1.2.0",
+    "node-addon-api": "^7.1.1",
+    "picocolors": "^1.1.1",
+    "picomatch": "^2.3.1",
+    "tailwindcss": "^4.0.0",
+    "tapable": "^2.2.1",
+    "to-regex-range": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./src/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PriscilliaHilDev/my-new-cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PriscilliaHilDev/my-new-cv/issues"
+  },
+  "homepage": "https://github.com/PriscilliaHilDev/my-new-cv#readme",
+  "description": ""
+}

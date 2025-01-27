@@ -12,184 +12,156 @@
     <meta property="og:image:height" content="1024">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Priscillia Antonella Hillion Curriculum Vitae">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="src/assets/images/resume.png" type="image/png">
     <title>Priscillia Hillion Curriculum Vitae</title>
     <link rel="stylesheet" href="src/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.5.2/dist/flowbite.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="flex flex-col min-h-screen bg-gray-100">
+<body class="flex flex-col min-h-screen  bg-gray-100">
 
   <!-- Contenu principal -->
   
-  <nav class="p-2 container mx-auto">
-    <div class="flex flex-wrap justify-center items-center sm:space-y-4 sm:justify-between sm:space-y-0 w-full">
+  <nav class="p-8 bg-gray-900 ">
+    <div class=" container  mx-auto flex flex-wrap justify-center items-center  sm:justify-between sm:space-y-0 ">
       <!-- Lien "télécharger cv" -->
       <div class="sm:pr-0 pr-4">
-        <a 
-          href="src/assets/files/priscilliaHillion-cv.pdf" target="_blank"
-          class="flex flex-col justify-center items-center rounded-full sm:rounded-sm sm:px-6 sm:py-2 px-4 py-2">
-          <i class="fas fa-download text-[24px] sm:text-lg md:text-xl"></i>
-          <span class="text-[12px] sm:text-[16px] md:text-[16px] hidden md:block">Télécharger CV</span>
-          <span class="text-[12px] sm:text-[16px] md:text-[16px] block md:hidden">CV</span>
-        </a>
+          <span class="text-[20px] title-cv lg:text-[25px]  hidden md:block text-white">CurriculumVitea</span>
       </div>
   
       <!-- Liens de navigation -->
       <div class="flex flex-wrap justify-center items-center space-x-8" id="navbar-content">
         <!-- A propos de moi -->
-        <a href="/" class="flex flex-col items-center ">
-          <i class="fas fa-user text-[24px] sm:text-lg md:text-xl px-2 block sm:hidden"></i>
-          <span class="text-[12px] sm:text-[16px] md:text-[16px] hidden sm:block">Accueil</span>
+        <a href="/" class="flex flex-col items-center nav-item">
+          <i class="fas fa-user text-[24px] text-white sm:text-lg md:text-xl px-2" ></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px]  hidden sm:block text-white">Accueil</span>
         </a>
   
         <!-- Parcours -->
-        <a href="#parcours" class="flex flex-col items-center ">
-          <i class="fas fa-briefcase text-[24px] sm:text-lg px-2 md:text-xl block sm:hidden"></i>
-          <span class="text-[12px] sm:text-[16px] md:text-[16px] hidden sm:block">Expériences</span>
+        <a href="#parcours" class="flex flex-col items-center nav-item ">
+          <i class="fas fa-briefcase text-[24px] text-white sm:text-lg px-2 md:text-xl "></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px]   hidden sm:block text-white">Expériences</span>
         </a>
   
         <!-- Réalisations -->
-        <a href="#realisations" class="flex flex-col items-center ">
-          <i class="fas fa-paint-brush text-[24px] sm:text-lg px-2 md:text-xl block sm:hidden"></i>
-          <span class="text-[12px] sm:text-[16px] md:text-[16px] hidden sm:block">Réalisations</span>
+        <a href="#realisations" class="flex flex-col items-center nav-item">
+          <i class="fas fa-paint-brush text-[24px]  text-white sm:text-lg px-2 md:text-xl "></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px]  hidden sm:block text-white">Réalisations</span>
         </a>
   
         <!-- Contact -->
-        <a href="#contact" class="flex flex-col items-center ">
-          <i class="fas fa-envelope-open text-[24px] sm:text-lg px-2 md:text-xl block sm:hidden"></i>
-          <span class="text-[12px] sm:text-[16px] md:text-[16px] hidden sm:block">Contact</span>
+        <a href="#contact" class="flex flex-col items-center nav-item">
+          <i class="fas fa-envelope-open text-[24px] text-white sm:text-lg md:text-xl icon"></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px]  hidden sm:block text-white">Contact</span>
         </a>
       </div>
     </div>
   </nav>
   
-      <main class="dark:bg-gray-900 ">
+      <main class="dark:bg-gray-900  ">
         <div class="  p-6" id="main-content">
           <div class="container mx-auto p-8 xl:px-28">
-            <div class="flex flex-col lg:flex-row items-center justify-around relative space-y-8 lg:space-y-0">
+            <div class="flex flex-col lg:flex-row items-center justify-around relative  lg:space-y-0">
               <!-- Photo + Bouton Contact -->
-              <div class="flex items-center space-y-4">
+              <div class="flex items-center ">
                 <!-- Photo -->
                 <img 
                   src="src/assets/images/prisHillion.jpeg" 
                   alt="Priscillia HILLION" 
-                  class="rounded-full p-4 w-[250px] sm:w-[300px]"
+                  class="rounded-full p-4 w-[250px] sm:w-[300px] md:w-[350px]"
                 >
                 <!-- Bouton Contact -->
                 <a 
                   href="#contact" 
-                  class="flex flex-col items-center justify-center text-2xl font-semibold bg-red-400 rounded-lg sm:ml-8 ml-4 px-6 py-6 space-y-0 hover:bg-red-600"
+                  class="btn flex flex-col items-center justify-center  sm:text-2xl text-lg font-semibold bg-gray-100  border-8 border-gray-700  rounded-lg sm:ml-8 ml-4  px-4 sm:px-6 py-4 sm:py-6 space-y-0 hover:bg-[#2dd4bf]"
                 >
-                  <span class="text-pink-500">C</span>
-                  <span class="text-pink-500">O</span>
-                  <span class="text-pink-500">N</span>
-                  <span class="text-pink-500">T</span>
-                  <span class="text-pink-500">A</span>
-                  <span class="text-pink-500">C</span>
-                  <span class="text-pink-500">T</span>
+                  <span class="text-gray-900">C</span>
+                  <span class="text-gray-900">O</span>
+                  <span class="text-gray-900">N</span>
+                  <span class="text-gray-900">T</span>
+                  <span class="text-gray-900">A</span>
+                  <span class="text-gray-900">C</span>
+                  <span class="text-gray-900">T</span>
                 </a>
               </div>
-            
               <!-- Texte -->
-              <div class="flex-1 xl:px-20 lg:px-10 md:py-0 py-8 text-center lg:text-left">
-                <h1 class="text-[28px] lg:text-4xl sm:text-[30px]">Priscillia HILLION</h1>
-                <h2 class="text-[23px] lg:text-3xl sm:text-[25px]">Conceptrice Développeuse Web/Mobile</h2>
+              <div class="flex-1 xl:px-20 lg:px-10 md:py-0 py-8 text-center lg:text-left about-me">
+                <h1 class="text-[36px] lg:text-5xl sm:text-[45px]  font-semibold">Priscillia Hillion</h1>
+                <h2 class="text-[25px] lg:text-3xl sm:text-[30px]  ">Conceptrice Développeuse Web/Mobile</h2>
                 <p class="mt-4 text-base sm:text-base md:text-lg p-4">
                   Je suis constamment en quête de nouvelles opportunités pour apprendre et m'améliorer. Chaque défi est pour moi une chance de progresser, d'affiner mes compétences, et de grandir.
                 </p>
               </div>
             </div>
-            
-            
-            
-            
           </div>
           
-
-       
           <div class="relative flex flex-col items-end p-8">
-            <div class="relative inline-block">
-              <h2 class="md:text-2xl sm:text-[22px] text-xl md:pt-8 text-right z-10 relative">
+            <div class="relative inline-block title">
+              <h2 class="lg:text-[34px] lg:text-[30px] sm:text-[27px] text-2xl  md:pt-8  text-right  z-10 relative">
                 Quelles sont mes connaissances techniques ?
               </h2>
-              <span class="absolute bottom-0 w-full h-[12px] rounded-3xl bg-purple-300 z-0"></span>
+              <span class="absolute bottom-0 w-full h-[12px] rounded-3xl bg-[#5eead4] z-0"></span>
             </div>
           </div>
-        
-          
-
-          <div class="container mx-auto py-8 2xl:px-28">
+          <div class="container mx-auto py-8 2xl:px-28 skills">
             <div class="flex flex-col lg:flex-row justify-around items-center">
-              <div class="w-full flex flex-col px-6">
+              <div class="w-full items-center px-6">
+                <h2 class="text-center text-lg md:text-xl sm:text-lg pb-12 font-semibold mb-6 ">Langages Informatiques</h2>
                 <div class="space-y-6 w-4/5 lg:w-2/3 sm:w-1/2 mx-auto">
-                  <div class="pt-1">
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">HTML</span>
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">85%</span>
+                  <div class="grid grid-cols-2 gap-6">
+                    <!-- Card 1 -->
+                    <div class="relative border-2 border-gray-100 border-solid rounded-lg overflow-hidden">
+                      <img src="src/assets/images/HTML5_logo_resized.svg.png" alt="JavaScript" class="w-full h-[120px] object-contain" />
                     </div>
-                    <div class="relative w-full bg-white rounded-lg shadow-sm h-5">
-                      <div class="bg-red-600 h-full rounded-l-lg transition-all duration-1000 w-[85%]"></div>
+                    <!-- Card 2 -->
+                    <div class="relative border-2 border-gray-100 border-solid rounded-lg overflow-hidden">
+                      <img src="src/assets/images/css.png" alt="CSS3" class="w-full h-[120px] object-contain" />
                     </div>
-                  </div>
-                  <div class="pt-1">
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">CSS</span>
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">65%</span>
+                    <!-- Card 3 -->
+                    <div class="relative border-2 border-gray-100 border-solid rounded-lg overflow-hidden">
+                      <img src="src/assets/images/php.png" alt="PHP" class="w-full h-[120px] object-contain" />
                     </div>
-                    <div class="relative w-full bg-white rounded-lg shadow-sm h-5">
-                      <div class="bg-blue-600 h-full rounded-l-lg transition-all duration-1000 w-[65%]"></div>
-                    </div>
-                  </div>
-                  <div class="pt-1">
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">PHP</span>
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">75%</span>
-                    </div>
-                    <div class="relative w-full bg-white rounded-lg shadow-sm h-5">
-                      <div class="bg-purple-600 h-full rounded-l-lg transition-all duration-1000 w-[75%]"></div>
-                    </div>
-                  </div>
-                  <div class="pt-1">
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">JavaScript</span>
-                      <span class="text-sm sm:text-base md:text-lg font-semibold">70%</span>
-                    </div>
-                    <div class="relative w-full bg-white rounded-lg shadow-sm h-5">
-                      <div class="bg-yellow-600 h-full rounded-l-lg transition-all duration-1000 w-[70%]"></div>
+                    <!-- Card 4 -->
+                    <div class="relative border-2 border-gray-100 border-solid rounded-lg overflow-hidden">
+                      <!-- Image -->
+                      <img src="src/assets/images/js.png" alt="JavaScript" class="w-full h-[120px] object-contain" />
                     </div>
                   </div>
                 </div>
               </div>
+              
+              
+              
+              
+              
           
                 <!-- Frameworks / Technologies -->
                 <div class="w-full p-6 flex flex-col lg:px-0 sm:px-28 px-10 ">
                   <h2 class="text-center  text-lg md:text-xl sm:text-lg font-semibold mb-6">Frameworks / Technologies</h2>
                   <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md  border-[2px]  border-gray-600 text-center flex flex-col items-center">
                       <img src="src/assets/images/1200px-Laravel.svg.png" alt="Laravel" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">Laravel 8-11</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md ">Laravel 8-11</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 text-center flex flex-col items-center">
                       <img src="src/assets/images/vue.png" alt="VueJS" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">VueJS 3</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md  ">VueJS 3</h5>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-3 rounded-lg shadow-md border-[2px]  border-gray-500 text-center flex flex-col items-center">
                       <img src="src/assets/images/rn.png" alt="React Native" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">React Native</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">React Native</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 text-center flex flex-col items-center">
                       <img src="src/assets/images/inertia.png" alt="InertiaJS" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">InertiaJS</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">InertiaJS</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500  text-center flex flex-col items-center">
                       <img src="src/assets/images/Bootstrap_logo.png" alt="Bootstrap" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">Bootstrap 5</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">Bootstrap 5</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 text-center flex flex-col items-center">
                       <img src="src/assets/images/tailwinds.png" alt="TailwindCSS" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">TailwindCSS</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">TailwindCSS</h5>
                     </div>
                   </div>
                 </div>
@@ -202,29 +174,29 @@
                 <div class="w-full lg:w-1/2  p-6 lg:px-0 sm:px-28 px-10 flex flex-col">
                   <h2 class="text-center text-lg md:text-xl sm:text-lg font-semibold mb-6">Outils</h2>
                   <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500  text-center flex flex-col items-center">
                       <img src="src/assets/images/git.png" alt="git" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">Git</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">Git</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 text-center flex flex-col items-center">
                       <img src="src/assets/images/myadmin.png" alt="PHP MyAdmin" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">PHP MyAdmin</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">PHP MyAdmin</h5>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-3 rounded-lg shadow-md border-[2px]  border-gray-500  text-center flex flex-col items-center">
                       <img src="src/assets/images/composer.png" alt="Composer" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">Composer</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">Composer</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md  border-[2px]  border-gray-500 text-center flex flex-col items-center">
                       <img src="src/assets/images/Figma-logo.svg" alt="Figma" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">Figma</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">Figma</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500  text-center flex flex-col items-center">
                       <img src="src/assets/images/sql.png" alt="SQL" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">SQL</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">SQL</h5>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500  text-center flex flex-col items-center">
                       <img src="src/assets/images/firebase.png" alt="Firebase" class="w-16 h-16 mb-4" />
-                      <h5 class="text-sm xl:text-lg md:text-md  font-semibold">Firebase</h5>
+                      <h5 class="text-sm xl:text-lg md:text-md">Firebase</h5>
                     </div>
                   </div>
                 </div>
@@ -260,7 +232,6 @@
 
   </main>
 
-
     <!-- Footer fixé en bas -->
     <footer class="bg-gray-900 text-white py-8 mt-auto">
       <div class="max-w-screen-xl mx-auto px-6">
@@ -268,7 +239,7 @@
           <!-- Section gauche : Localisation avec icône -->
           <div class="flex items-center space-x-4">
             <i class="fa-solid fa-location-pin text-white w-6 h-6"></i>
-            <p class="text-sm"><span class="font-semibold">Les Trois Ilets, Martinique</span></p>
+            <p class="text-sm"><span >Les Trois Ilets, Martinique</span></p>
           </div>
 
           <!-- Section centrale : Message ou petite citation -->
@@ -283,7 +254,6 @@
         </div>
       </div>
     </footer>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <script type="module" src="src/js/app.js" defer></script>
 </body>
 </html>
