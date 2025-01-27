@@ -102,10 +102,10 @@ function initializeFilterExp() {
 
     // Mettre à jour le style du bouton actif
     activeButton.classList.add('bg-gray-700', 'text-white');
-    activeButton.classList.remove('bg-gray-100', 'text-gray-800', 'border-4', 'sm:border-8');
+    activeButton.classList.remove('bg-gray-100', 'text-gray-800', 'border-6', 'sm:border-8');
 
     // Réinitialiser le style du bouton inactif
-    inactiveButton.classList.add('bg-gray-100', 'text-gray-800', 'border-4', 'sm:border-8');
+    inactiveButton.classList.add('bg-gray-100', 'text-gray-800', 'border-6', 'sm:border-8');
     inactiveButton.classList.remove('bg-gray-700', 'text-white');
   }
 
