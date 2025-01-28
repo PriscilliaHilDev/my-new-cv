@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  
   /**
    * SECTION 1: Navigation - Gestion des liens actifs
    * Met à jour l'état actif des liens de navigation en fonction du hash de l'URL.
@@ -63,6 +65,43 @@ document.addEventListener("DOMContentLoaded", () => {
   //     });
   //   });
   // });
+
+  function activeCardsProject (){
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const isActive = card.classList.contains("active");
+  
+        // Désactiver toutes les cartes
+        cards.forEach((c) => {
+          c.classList.remove("active");
+          const details = c.querySelector(".card-details");
+          details.classList.add("opacity-0", "pointer-events-none"); // Masquer le contenu
+        });
+  
+        // Activer la carte cliquée si elle n'était pas active
+        if (!isActive) {
+          card.classList.add("active");
+          const details = card.querySelector(".card-details");
+          details.classList.remove("opacity-0", "pointer-events-none"); // Afficher le contenu
+          details.classList.add("opacity-100", "pointer-events-auto"); // Rendre interactif
+        }
+      });
+    });
+  
+    // Fermer les cartes si clic en dehors
+    document.addEventListener("click", (event) => {
+      if (!event.target.closest(".card")) {
+        cards.forEach((card) => {
+          card.classList.remove("active");
+          const details = card.querySelector(".card-details");
+          details.classList.add("opacity-0", "pointer-events-none"); // Masquer le contenu
+        });
+      }
+    });
+  }
+
  /**
    * SECTION 2: Gestion des vidéos
    */
@@ -85,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
     videoPlayer.pause();
     videoPlayer.currentTime = 0;
   });
-} 
+ } 
 
 function initializeFilterExp() {
   // Sélection des éléments
@@ -144,6 +183,7 @@ function initializeFilterExp() {
   
         // Vérifie si la page est "realisations" et manipule les éléments après chargement
         if (page === "realisations") {
+          activeCardsProject();
           initializeVideoHandlers(); // Appelle la gestion des vidéos après le chargement
         }
 

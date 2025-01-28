@@ -1,5 +1,5 @@
 <div class="relative flex flex-col items-center p-8">
-  <div class="relative inline-block mb-20 title"> <!-- Ajout de mb-8 pour l'espace entre le titre et les cartes -->
+  <div class="relative inline-block mb-8 title"> <!-- Ajout de mb-8 pour l'espace entre le titre et les cartes -->
     <h2 class="lg:text-[30px] lg:text-[30px] sm:text-[27px] text-2xl  text-center z-10 relative">
       Exploration de mes projets personnels
     </h2>
@@ -10,14 +10,14 @@
 <div class="container mx-auto p-6">
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- Carte 1 -->
-    <div class="relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
+    <div class="card relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
       <!-- Image principale -->
       <img src="src/assets/images/crud-app-blog.jpg" alt="Image 1" class="w-full h-[350px] object-cover">
       <!-- Titre -->
       <div class="p-4 bg-white">
         <h3 class="text-center font-semibold text-teal-700">BLOG CRUD-APP</h3>
       </div>
-      <div class="absolute inset-0 bg-[#14b8a6]   flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div class="card-details opacity-0 pointer-events-none absolute inset-0 bg-[#14b8a6]   flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <!-- Description -->
         <p class="sm:text-base text-sm mb-4 text-center">Un site web développé avec Laravel 11, VueJS 3 (API Composition) et InertiaJS, intégrant un tableau de bord avec Backpack, des notifications en temps réel via Pusher, un déploiement Docker, et une authentification Google.</p>
         <!-- Rangée de petites images -->
@@ -34,12 +34,12 @@
     </div>
 
     <!-- Carte 2 -->
-  <div class="relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
+  <div class="card relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
     <img src="src/assets/images/myfastfood-mobileapp.png" alt="Image 3" class="w-full h-[350px] object-cover">
     <div class="p-4 bg-white">
       <h3 class="text-center font-semibold text-teal-700">MYFASTFOOD APP</h3>
     </div>
-    <div class="absolute inset-0 bg-[#14b8a6] flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="card-details opacity-0 pointer-events-none absolute inset-0 bg-[#14b8a6] flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       <!-- Description -->
       <p class="sm:text-base text-sm mb-4 text-center">Une application mobile Android de type e-commerce, développée avec React Native, utilisant Firebase pour la gestion de la base de données et l'authentification des utilisateurs. Elle intègre également Stripe pour le traitement des paiements en ligne.</p>
       <!-- Rangée de petites images -->
@@ -54,13 +54,13 @@
   </div>
 
     <!-- Carte 3 -->
-    <div class="relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
+    <div class="card relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
       <!-- Image principale -->
       <img src="src/assets/images/myfastfood-admin.png" alt="Image 3" class="w-full h-[350px] object-cover">
       <div class="p-4 bg-white">
         <h3 class="text-center font-semibold text-teal-700">MYFASTFOOD ADMIN</h3>
       </div>
-      <div class="absolute inset-0 bg-[#14b8a6] flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div class="card-details opacity-0 pointer-events-none absolute inset-0 bg-[#14b8a6] flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <!-- Description -->
         <p class="sm:text-base text-sm mb-4 text-center">L'interface d'administration web de l'application mobile MyFastFood est développée avec React, utilisant Firebase pour la gestion des données et l'authentification. Le design est créé avec Material UI.</p>
         <!-- Rangée de petites images -->
@@ -85,7 +85,7 @@
     <button id="close-modal" class="absolute top-0 right-0 p-2 text-white bg-red-500 hover:bg-red-700 rounded-full">
       <i class="fas fa-times"></i>
     </button>
-    <video id="video-player" class="h-auto w-full max-w-4xl rounded-lg" controls>
+    <video id="video-player" class="h-auto w-full max-w-4xl rounded-lg p-10" controls>
       <source id="video-source" src="" type="video/mp4">
       Votre navigateur ne prend pas en charge la balise vidéo.
     </video>

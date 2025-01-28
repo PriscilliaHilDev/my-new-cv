@@ -39,24 +39,29 @@
                 </div>
               </div> -->
 
-<!-- content realisations-->
-              <div class="flex justify-center px-4">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-items-center w-full max-w-screen-lg" id="projects-grid">
-                  <!-- Card 1 -->
-                  <div class="project relative group w-full max-w-[350px] h-[400px] border-solid border-[3px] border-gray-900 rounded-lg hover:border-none" data-category="shoes">
+              <div class="relative flex flex-col items-center p-8">
+                <div class="relative inline-block mb-8 title"> <!-- Ajout de mb-8 pour l'espace entre le titre et les cartes -->
+                  <h2 class="lg:text-[30px] lg:text-[30px] sm:text-[27px] text-2xl  text-center z-10 relative">
+                    Exploration de mes projets personnels
+                  </h2>
+                  <span class="absolute bottom-0 w-full h-[12px] rounded-3xl bg-[#5eead4] z-0"></span>
+                </div>
+              </div>
+              <div class="container mx-auto p-6">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <!-- Carte 1 -->
+                  <div class="relative card group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
                     <!-- Image principale -->
-                    <img class="h-full w-full object-cover rounded-lg" src="src/assets/images/crud-app-blog.jpg" alt="Shoes">
-              
-                    <!-- Contenu au survol -->
-                    <div class="absolute inset-0 bg-[#14b8a6] bg-opacity-100 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity p-4 rounded-lg">
-                      <!-- Titre -->
-                      <h3 class="text-white text-2xl font-semibold mb-2">BLOG CRUD-APP</h3>
-              
+                    <img src="src/assets/images/crud-app-blog.jpg" alt="Image 1" class="w-full h-[350px] object-cover">
+                    <!-- Titre -->
+                    <div class="p-4 bg-white">
+                      <h3 class="text-center font-semibold text-teal-700">BLOG CRUD-APP</h3>
+                    </div>
+                    <div class="card-details opacity-0 pointer-events-none absolute inset-0 bg-[#14b8a6] flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <!-- Description -->
                       <p class="sm:text-base text-sm mb-4 text-center">Un site web développé avec Laravel 11, VueJS 3 (API Composition) et InertiaJS, intégrant un tableau de bord avec Backpack, des notifications en temps réel via Pusher, un déploiement Docker, et une authentification Google.</p>
-              
                       <!-- Rangée de petites images -->
-                      <div class="flex space-x-2 mb-4">
+                      <div class="flex flex-wrap justify-center space-x-2 mb-4">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/laravel-bg.jpg" alt="Logo Laravel">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/vue.png" alt="Logo VueJs">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/inertia.png" alt="Logo InertiaJs">
@@ -64,291 +69,61 @@
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/docker.svg" alt="Logo Docker">
                       </div>
                       <!-- Lien Voir la vidéo -->
-                      <a href="#" class="play-video text-white text-lg" data-video="src/assets/videos/crud-app.mp4">Voir la vidéo</a>
+                      <a href="#" class="play-video text-white text-lg font-semibold" data-video="src/assets/videos/crud-app.mp4">Voir la vidéo</a>
                     </div>
                   </div>
               
-                  <!-- Card 2 -->
-                  <div class="project relative group w-full max-w-[350px] h-[400px] border-solid border-[3px] border-gray-900 rounded-lg hover:border-none" data-category="shoes">
-                    <!-- Image principale -->
-                    <img class="h-full w-full object-cover rounded-lg" src="src/assets/images/myfastfood-mobileapp.png" alt="Shoes">
-              
-                    <!-- Contenu au survol -->
-                    <div class="absolute inset-0 bg-[#14b8a6] bg-opacity-100 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity p-4 rounded-lg">
-                      <!-- Titre -->
-                      <h3 class="text-white text-2xl font-semibold mb-2">MyFastFood App</h3>
-              
-                      <!-- Description -->
+                  <!-- Carte 2 -->
+                  <div class="relative card group overflow-hidden rounded-lg shadow-lg border-gray-500 border-2">
+                    <img src="src/assets/images/myfastfood-mobileapp.png" alt="Image 3" class="w-full h-[350px] object-cover">
+                    <div class="p-4 bg-white">
+                      <h3 class="text-center font-semibold text-teal-700">MYFASTFOOD APP</h3>
+                    </div>
+                    <div class="card-details opacity-0 pointer-events-none absolute inset-0 bg-[#14b8a6] flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p class="sm:text-base text-sm mb-4 text-center">Une application mobile Android de type e-commerce, développée avec React Native, utilisant Firebase pour la gestion de la base de données et l'authentification des utilisateurs. Elle intègre également Stripe pour le traitement des paiements en ligne.</p>
-              
-                      <!-- Rangée de petites images -->
                       <div class="flex space-x-2 mb-4">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/rn.png" alt="Logo React Native">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/firebase.png" alt="Logo Firebase">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/stripe.png" alt="Logo Stripe">
                       </div>
-                      <!-- Lien Voir la vidéo -->
-                      <a href="#" class="play-video text-white text-lg" data-video="src/assets/videos/myfastfood-android.mp4">Voir la vidéo</a>
+                      <a href="#" class="play-video text-white text-lg font-semibold" data-video="src/assets/videos/myfastfood-android.mp4">Voir la vidéo</a>
                     </div>
+                  
                   </div>
               
-                  <!-- Card 3 -->
-                  <div class="project relative group w-full max-w-[350px] h-[400px] border-solid border-[3px] border-gray-900 rounded-lg hover:border-none" data-category="shoes">
-                    <!-- Image principale -->
-                    <img class="h-full w-full object-cover rounded-lg" src="src/assets/images/myfastfood-admin.png" alt="Shoes">
-              
-                    <!-- Contenu au survol -->
-                    <div class="absolute inset-0 bg-[#14b8a6] bg-opacity-100 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity p-4 rounded-lg">
-                      <!-- Titre -->
-                      <h3 class="text-white text-2xl font-semibold mb-2">MyFastFood Admin</h3>
-              
-                      <!-- Description -->
-                      <p class="sm:text-base text-sm mb-4 text-center">L'interface d'administration web de l'application mobile MyFastFood est développée avec React, utilisant Firebase pour la gestion des données et l'authentification. Le design est créé avec Material UI pour une interface moderne et responsive.</p>
-              
-                      <!-- Rangée de petites images -->
+                  <!-- Carte 3 -->
+                  <div class="relative card group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
+                    <img src="src/assets/images/myfastfood-admin.png" alt="Image 3" class="w-full h-[350px] object-cover">
+                    <div class="p-4 bg-white">
+                      <h3 class="text-center font-semibold text-teal-700">MYFASTFOOD ADMIN</h3>
+                    </div>
+                    <div class="card-details opacity-0 pointer-events-none absolute inset-0 bg-[#14b8a6] flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p class="sm:text-base text-sm mb-4 text-center">L'interface d'administration web de l'application mobile MyFastFood est développée avec React, utilisant Firebase pour la gestion des données et l'authentification. Le design est créé avec Material UI.</p>
                       <div class="flex space-x-2 mb-4">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/reactjs.png" alt="Logo React JS">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/firebase.png" alt="Logo Firebase">
                         <img class="w-12 h-12 object-cover rounded-full" src="src/assets/images/material--ui.png" alt="Logo Material-UI">
                       </div>
-                      <!-- Lien Voir la vidéo -->
-                      <a href="#" class="play-video text-white text-lg" data-video="src/assets/videos/myfastfood-administration.mp4">Voir la vidéo</a>
+                      <a href="#" class="play-video text-white text-lg font-semibold" data-video="src/assets/videos/myfastfood-administration.mp4">Voir la vidéo</a>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-              <!--content parcours-->
-
-              <div class="mb-4">
-                <ul 
-                  class="flex justify-center space-x-4 text-sm font-medium text-center" 
-                  id="default-styled-tab" 
-                  data-tabs-toggle="#default-styled-tab-content"
-                  role="tablist"
-                >
-                  <li role="presentation" >
-                    <button 
-                      class="inline-block w-48 p-4 rounded-sm  bg-purple-100 hover:bg-purple-200 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none"
-                      id="experiences-styled-tab"
-                      data-tabs-target="#styled-experiences"
-                      type="button"
-                      role="tab"
-                      aria-controls="experiences"
-                      aria-selected="false"
-                    >
-                      Professionnelles
-                    </button>
-                  </li>
-                  <li role="presentation">
-                    <button 
-                      class="inline-block w-48 p-4 rounded-sm bg-purple-100 hover:bg-purple-200 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none"
-                      id="diplomes-styled-tab"
-                      data-tabs-target="#styled-diplomes"
-                      type="button"
-                      role="tab"
-                      aria-controls="diplomes"
-                      aria-selected="false"
-                    >
-                      Académiques
-                    </button>
-                  </li>
-                </ul>
+              
+              
+              
+              
+              
+              <!-- Vidéo Modal -->
+              <div id="video-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                <div class="relative bg-transparent p-4 max-w-4xl w-full mx-auto rounded-lg shadow-lg">
+                  <button id="close-modal" class="absolute top-0 right-0 p-2 text-white bg-red-500 hover:bg-red-700 rounded-full">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <video id="video-player" class="h-auto w-full max-w-4xl rounded-lg" controls>
+                    <source id="video-source" src="" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la balise vidéo.
+                  </video>
+                </div>
               </div>
               
-            
-            <div id="default-styled-tab-content">
-                    <!-- Premier onglet expériences -->
-            
-                    <div class="hidden rounded-lg dark:bg-gray-800" id="styled-experiences" role="tabpanel" aria-labelledby="experiences-styled-tab">
-                        <div class="container mx-auto flex flex-col mt-12">
-                            <!-- Première expérience -->
-                            <div class="border bg-gray-50 rounded-md mb-4">
-                                <div class="p-5 bg-pink-100 text-left">
-                                    <h3 class="text-md sm:text-lg font-semibold">
-                                        Développeuse Full-Stack en Full Remote chez 
-                                        <a href="https://www.linkedin.com/company/globalstim/" target="_blank" class="text-pink-600">Globalstim</a>
-                                        <span> - 1 an</span>
-                                    </h3>
-                                </div>
-                                <div class="p-5">
-                                    <p class="text-base sm:text-md text-center">Reprise d'un code existant avec création, modification et amélioration de fonctionnalités.</p>
-                                </div>
-                                <div class="p-5 border-t-0 flex flex-col md:flex-row items-center justify-center">
-                                    <div class="w-full md:w-1/2 px-4">
-                                        <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement du tableau de bord</h4>
-                                        <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
-                                            <li>- Création et gestion des interfaces avec Laravel, InertiaJS, ReactJS et BackPack.</li>
-                                            <li>- Gestion de la base de données via Eloquent.</li>
-                                            <li>- Exportation des données au format Excel.</li>
-                                        </ul>
-                                        <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement Mobile</h4>
-                                        <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
-                                            <li>- Reprise et création de composants React Native pour Android.</li>
-                                            <li>- Exploitation de l'architecture Redux pour la gestion de l'état.</li>
-                                            <li>- Utilisation d'Apollo Client pour intégrer les données via GraphQL.</li>
-                                        </ul>
-                                        <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Méthode Agile</h4>
-                                        <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
-                                            <li>- Organisation des tâches avec Trello.</li>
-                                            <li>- Suivi des projets sur Discord.</li>
-                                            <li>- Collaboration sur GitLab pour la gestion des versions.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="w-full md:w-1/2 px-8">
-                                        <h3 class="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4 md:py-0 py-8 text-center">Environnement de travail</h3>
-                                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/1200px-Laravel.svg.png" alt="Laravel" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Laravel 8</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/rn.png" alt="React Native" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">React Native</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/reactjs.png" alt="ReactJS" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">ReactJS</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/graphQL.png" alt="GraphQL" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">GraphQL</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/inertia.png" alt="InertiaJS" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">InertiaJS</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/backpack.png" alt="BackPack 4" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">BackPack 4</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/discord-logo.png" alt="Discord" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Discord</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/gitlab.svg" alt="GitLab" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">GitLab</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/trello-logo.png" alt="Trello" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Trello</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Deuxième expérience -->
-                            <div class="border bg-gray-50 rounded-md mb-4">
-                                <div class="p-5 bg-pink-100 text-left">
-                                    <h3 class="text-md sm:text-lg font-semibold">
-                                        Stagiaire en Développement Web Full-Stack chez 
-                                        <a href="https://www.linkedin.com/company/whaaat-studio" target="_blank" class="text-pink-600">Whaaat Studio</a>
-                                        <span> - 3 mois</span>
-                                    </h3>
-                                </div>
-                                <div class="p-5">
-                                    <p class="text-base sm:text-md text-center">Reprise d'un code existant avec création de nouvelles fonctionnalités.</p>
-                                </div>
-                                <div class="p-5 border-t-0 flex flex-col md:flex-row items-center justify-center">
-                                    <div class="w-full md:w-1/2 px-4">
-                                        <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement Back-End et Front-End</h4>
-                                        <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
-                                            <li>- Création d'administrateurs avec envoi automatique de mails.</li>
-                                            <li>- Gestion du panier utilisateur et génération de coupons PDF avec QR Code.</li>
-                                            <li>- Développement de la pagination dynamique avec Ajax.</li>
-                                            <li>- Filtrage des produits par catégories avec Ajax.</li>
-                                        </ul>
-                                        <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Développement Front-End avec React Native</h4>
-                                        <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
-                                            <li>- Reproduction des écrans de l'application mobile.</li>
-                                            <li>- Intégration de Redux pour la gestion d'état.</li>
-                                        </ul>
-                                        <h4 class="text-base sm:text-base text-gray-500 dark:text-gray-400 font-semibold mt-4 mb-2">Méthode Agile</h4>
-                                        <ul class="text-sm sm:text-base list-inside pl-6 text-gray-500 dark:text-gray-400 space-y-2">
-                                            <li>- Suivi des projets avec communications sur Discord.</li>
-                                            <li>- Collaboration sur Bitbucket pour la gestion des versions.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="w-full md:w-1/2 px-8">
-                                        <h3 class="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4 md:py-0 py-8 text-center">Environnement de travail</h3>
-                                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500  dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/symfony.svg" alt="Symfony" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Symfony 5</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/reactjs.png" alt="ReactJS" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">ReactJS</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/bitbucket-logo.png" alt="Bitbucket" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Bitbucket</h4>
-                                            </div>
-                                            <div class="bg-white p-4 rounded-lg shadow-md border-[2px]  border-gray-500 dark:bg-gray-800 dark:text-white">
-                                                <img src="src/assets/images/discord-logo.png" alt="Discord" class="w-16 h-16 mx-auto mb-4">
-                                                <h4 class="text-sm xl:text-lg md:text-md text-center font-semibold">Discord</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                
-            
-                <!-- Deuxième onglet de Diplômes -->
-                <div class="hidden rounded-lg dark:bg-gray-800" id="styled-diplomes" role="tabpanel" aria-labelledby="diplomes-styled-tab">
-                    <div class="border container mx-auto rounded-md pb-20 mt-10">
-                        <div class="flex flex-col items-center ">
-                            <!-- Titre avec fond coloré -->
-                            <div class="w-full bg-pink-300 rounded-t-md  p-8 shadow-md text-center">
-                                <h3 class="text-md sm:text-lg  font-semibold">
-                                    Diplome et titres professionnels
-                                </h3>
-                            </div>
-                    
-                            <div class="relative py-10 ">
-                                <!-- Barre verticale -->
-                                <div class="absolute left-4 transform -translate-x-1/2 h-full border-l-8 border-gray-300"></div>
-                    
-                                <div class="space-y-12">
-                                    <!-- Premier diplôme -->
-                                    <div class="relative flex items-center">
-                                        <div class="absolute -left-20 text-sm text-gray-500">2015</div>
-                                        <div class="w-8 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
-                                        <div class="ml-8 w-full max-w-md">
-                                            <h3 class="font-semibold text-lg text-gray-800">Baccalauréat STI2D</h3>
-                                            <p class="text-gray-600">Lycée Jean Monnet, Montrouge</p>
-                                        </div>
-                                    </div>
-                    
-                                    <!-- Deuxième diplôme -->
-                                    <div class="relative flex items-center">
-                                        <div class="absolute -left-20 text-sm text-gray-500">2017</div>
-                                        <div class="w-8 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
-                                        <div class="ml-8 w-full max-w-md">
-                                            <h3 class="font-semibold text-lg text-gray-800">BTS SIO</h3>
-                                            <p class="text-gray-600">Lycée des métiers Saint-Antoine, Paris</p>
-                                        </div>
-                                    </div>
-                    
-                                    <!-- Troisième diplôme -->
-                                    <div class="relative flex items-center">
-                                        <div class="absolute -left-20 text-sm text-gray-500">2019</div>
-                                        <div class="w-8 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
-                                        <div class="ml-8 w-full max-w-md">
-                                            <h3 class="font-semibold text-lg text-gray-800">Licence Professionnelle</h3>
-                                            <p class="text-gray-600">Université de Paris, Paris</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
