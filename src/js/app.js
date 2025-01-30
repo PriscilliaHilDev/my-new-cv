@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+  if (!window.location.hash) {
+    history.replaceState(null, null, "#accueil"); // Force le hash #accueil si inexistant
+  }
+  handleHashChange(location.hash); // Charge la page correspondante
   
   /**
    * SECTION 1: Navigation - Gestion des liens actifs
@@ -216,7 +219,7 @@ function initializeFilterExp() {
    */
   function handleHashChange(hash) {
     const currentHash = hash.replace("#", "").trim(); // Extrait le nom de la page depuis le hash
-    const validHashes = ["realisations", "parcours", "contact"]; // Liste des hashes valides
+    const validHashes = ["accueil","realisations", "parcours", "contact"]; // Liste des hashes valides
 
     if (validHashes.includes(currentHash)) {
       loadPage(currentHash); // Charge la page correspondant au hash
@@ -225,6 +228,15 @@ function initializeFilterExp() {
       // Met à jour l'URL sans recharger la page (grâce à history.pushState)
       history.pushState(null, null, `#${currentHash}`);
     }
+
+    if (!currentHash || !validHashes.includes(currentHash)) {
+      currentHash = "accueil"; // Charge "accueil" si le hash est vide ou invalide
+      loadPage(currentHash); // Charge la page correspondant au hash
+    updateActiveLink(); // Met à jour l'état actif des liens de navigation
+      history.replaceState(null, null, `#${currentHash}`); // Met à jour l'URL proprement
+    }
+  
+    
   }
 
   /**

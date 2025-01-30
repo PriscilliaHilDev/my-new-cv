@@ -126,4 +126,32 @@
                   </video>
                 </div>
               </div>
-              
+              /**
+ * SECTION 4: Gestion du hash et navigation
+ * Gère les changements de hash dans l'URL pour charger les pages correspondantes.
+ */
+function handleHashChange(hash) {
+  let currentHash = hash.replace("#", "").trim(); // Extrait le nom de la page depuis le hash
+  const validHashes = ["accueil", "realisations", "parcours", "contact"]; // Liste des hashes valides
+
+  if (!currentHash || !validHashes.includes(currentHash)) {
+    currentHash = "accueil"; // Charge "accueil" si le hash est vide ou invalide
+    history.replaceState(null, null, `#${currentHash}`); // Met à jour l'URL proprement
+  }
+
+  loadPage(currentHash); // Charge la page correspondant au hash
+  updateActiveLink(); // Met à jour l'état actif des liens de navigation
+}
+
+// Vérifie l'URL au chargement de la page
+window.addEventListener("DOMContentLoaded", () => {
+  if (!location.hash) {
+    history.replaceState(null, null, "#accueil"); // Force le hash #accueil si inexistant
+  }
+  handleHashChange(location.hash); // Charge la page correspondante
+});
+
+// Écoute les changements de hash pour naviguer dynamiquement
+window.addEventListener("hashchange", () => {
+  handleHashChange(location.hash);
+});
