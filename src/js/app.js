@@ -221,7 +221,7 @@ function initializeFilterExp() {
     const currentHash = hash.replace("#", "").trim(); // Extrait le nom de la page depuis le hash
     const validHashes = ["accueil","realisations", "parcours", "contact"]; // Liste des hashes valides
 
-    if (validHashes.includes(currentHash)) {
+    if (currentHash && validHashes.includes(currentHash)) {
       loadPage(currentHash); // Charge la page correspondant au hash
       updateActiveLink(); // Met à jour l'état actif des liens de la navigation
 
