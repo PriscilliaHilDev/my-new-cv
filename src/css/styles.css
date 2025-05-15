@@ -1560,6 +1560,9 @@ body {
 body.modal-open {
   background-color: transparent;
 }
+
+
+
 .nav-item span.active {
   color: #2dd4bf;
   font-weight: 600;
