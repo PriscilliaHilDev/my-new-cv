@@ -537,6 +537,10 @@
     border-top-left-radius: var(--radius-lg);
     border-bottom-left-radius: var(--radius-lg);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -883,6 +887,13 @@
       }
     }
   }
+  .hover\:bg-\[\#5eead4\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #5eead4;
+      }
+    }
+  }
   .hover\:bg-gray-300 {
     &:hover {
       @media (hover: hover) {
@@ -901,6 +912,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-red-700);
+      }
+    }
+  }
+  .hover\:bg-teal-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-teal-400);
       }
     }
   }
@@ -1318,6 +1336,15 @@
   .dark\:text-white {
     @media (prefers-color-scheme: dark) {
       color: var(--color-white);
+    }
+  }
+  .dark\:hover\:bg-teal-700 {
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-teal-700);
+        }
+      }
     }
   }
   .dark\:hover\:text-red-700 {
