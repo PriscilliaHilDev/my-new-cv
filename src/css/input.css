@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'texte';
+  src: url('../assets/fonts/ShortStack-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'grand-titre';
+  src: url('../assets/fonts/DeliusSwashCaps-Regular.ttf') format('truetype');
+}
+body {
+  font-family: 'texte', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1f2937;
+}
+.title-cv h1, .title-cv h2, .title-cv, .title h2 {
+  font-family: grand-titre;
+}
+.about-me h1, .about-me h2 {
+  font-family: grand-titre;
+}
+body.modal-open {
+  background-color: transparent;
+}
+.nav-item span.active {
+  color: #2dd4bf;
+  font-weight: 600;
+}
+.nav-item i.active {
+  color: #2dd4bf;
+}
+.nav-item i {
+  display: block;
+}
+#video-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#video-player {
+  max-height: 80vh;
+}
+@media (width >= 40rem) {
+  .nav-item i {
+    display: none;
+  }
+}

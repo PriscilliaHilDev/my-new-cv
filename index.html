@@ -12,82 +12,89 @@
     <meta property="og:image:height" content="1024">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Priscillia Antonella Hillion Curriculum Vitae">
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <link rel="icon" href="src/assets/images/resume.png" type="image/png">
     <title>Priscillia Hillion Curriculum Vitae</title>
     <link rel="stylesheet" href="src/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="flex flex-col min-h-screen  bg-gray-100">
-
+<body class="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
   <!-- Contenu principal accueil-->
   
-  <nav class="p-8 bg-gray-900 ">
-    <div class=" container  mx-auto flex flex-wrap justify-center items-center  sm:justify-between sm:space-y-0 ">
+  <nav class="p-8 bg-gray-900 dark:bg-gray-800">
+    <div class="container mx-auto flex flex-wrap justify-center items-center sm:justify-between sm:space-y-0">
       <!-- Lien "télécharger cv pdf" -->
-      <div class="sm:pr-0 pr-4" >
-          <span class="text-[20px] title-cv lg:text-[25px]  hidden md:block text-white">CurriculumVitea</span>
+      <div class="sm:pr-0 pr-4">
+        <span class="text-[20px] title-cv lg:text-[25px] hidden md:block text-white dark:text-gray-100">
+          CurriculumVitea
+        </span>
       </div>
   
       <!-- Liens de navigation -->
       <div class="flex flex-wrap justify-center items-center space-x-8" id="navbar-content">
         <!-- A propos de moi -->
         <a href="#accueil" class="flex flex-col items-center nav-item">
-          <i class="fas fa-user text-[24px] text-white sm:text-lg md:text-xl px-2" ></i>
-          <span class="text-[12px] md:text-[18px] sm:text-[16px]  hidden sm:block text-white">Accueil</span>
+          <i class="fas fa-user text-[24px] text-white dark:text-gray-100 sm:text-lg md:text-xl px-2"></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px] hidden sm:block text-white dark:text-gray-100">
+            Accueil
+          </span>
         </a>
   
         <!-- Parcours -->
-        <a href="#parcours" class="flex flex-col items-center nav-item ">
-          <i class="fas fa-briefcase text-[24px] text-white sm:text-lg px-2 md:text-xl "></i>
-          <span class="text-[12px] md:text-[18px] sm:text-[16px]   hidden sm:block text-white">Expérience</span>
+        <a href="#parcours" class="flex flex-col items-center nav-item">
+          <i class="fas fa-briefcase text-[24px] text-white dark:text-gray-100 sm:text-lg px-2 md:text-xl"></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px] hidden sm:block text-white dark:text-gray-100">
+            Expérience
+          </span>
         </a>
   
         <!-- Réalisations -->
         <a href="#realisations" class="flex flex-col items-center nav-item">
-          <i class="fas fa-paint-brush text-[24px]  text-white sm:text-lg px-2 md:text-xl "></i>
-          <span class="text-[12px] md:text-[18px] sm:text-[16px]  hidden sm:block text-white">Réalisations</span>
+          <i class="fas fa-paint-brush text-[24px] text-white dark:text-gray-100 sm:text-lg px-2 md:text-xl"></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px] hidden sm:block text-white dark:text-gray-100">
+            Réalisations
+          </span>
         </a>
   
         <!-- Contact -->
         <a href="#contact" class="flex flex-col items-center nav-item">
-          <i class="fas fa-envelope-open text-[24px] text-white sm:text-lg md:text-xl icon"></i>
-          <span class="text-[12px] md:text-[18px] sm:text-[16px]  hidden sm:block text-white">Contact</span>
+          <i class="fas fa-envelope-open text-[24px] text-white dark:text-gray-100 sm:text-lg md:text-xl icon"></i>
+          <span class="text-[12px] md:text-[18px] sm:text-[16px] hidden sm:block text-white dark:text-gray-100">
+            Contact
+          </span>
         </a>
       </div>
     </div>
   </nav>
   
-      <main class="dark:bg-gray-900  ">
-        <div class="  p-6" id="main-content">
-       
-          <!-- fin section competences -->
-          </div>
-
+  <main class="p-6">
+    <div id="main-content">
+      <!-- Section contenu -->
+    </div>
   </main>
 
-    <!-- Footer fixé en bas -->
-    <footer class="bg-gray-900 text-white py-8 mt-auto">
-      <div class="max-w-screen-xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-          <!-- Section gauche : Localisation avec icône -->
-          <div class="flex items-center space-x-4">
-            <i class="fa-solid fa-location-pin text-white w-6 h-6"></i>
-            <p class="text-sm"><span >Les Trois Ilets, Martinique</span></p>
-          </div>
+  <!-- Footer fixé en bas -->
+  <footer class="bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-100 py-8 mt-auto">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <!-- Section gauche : Localisation avec icône -->
+        <div class="flex items-center space-x-4">
+          <i class="fa-solid fa-location-pin text-white dark:text-gray-100 w-6 h-6"></i>
+          <p class="text-sm"><span>Les Trois Ilets, Martinique</span></p>
+        </div>
 
-          <!-- Section centrale : Message ou petite citation -->
-          <div class="mt-4 md:mt-0 text-center md:text-left">
-            <p class="text-sm font-light">"Prête à m'investir à vos côtés !"</p>
-          </div>
+        <!-- Section centrale : Message ou petite citation -->
+        <div class="mt-4 md:mt-0 text-center md:text-left">
+          <p class="text-sm font-light">"Prête à m'investir à vos côtés !"</p>
+        </div>
 
-          <!-- Section droite : Copyright -->
-          <div class="mt-4 md:mt-0 text-center">
-            <p class="text-sm">&copy; 2025 Tous droits réservés.</p>
-          </div>
+        <!-- Section droite : Copyright -->
+        <div class="mt-4 md:mt-0 text-center">
+          <p class="text-sm">&copy; 2025 Tous droits réservés.</p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+
   <script type="module" src="src/js/app.js" defer></script>
 </body>
 </html>

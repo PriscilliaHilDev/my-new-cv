@@ -1,16 +1,16 @@
 <div class="relative flex flex-col items-center p-8">
   <div class="relative inline-block mb-8 title"> <!-- Ajout de mb-8 pour l'espace entre le titre et les cartes -->
-    <h2 class="lg:text-[30px] lg:text-[30px] sm:text-[27px]  text-[22px] text-center z-10 relative">
+    <h2 class="lg:text-[30px] dark:text-white sm:text-[27px]  text-[22px] text-center z-10 relative">
       Exploration de mes projets personnels
     </h2>
-    <span class="absolute bottom-2 w-full h-[10px] rounded-3xl bg-[#5eead4] z-0"></span>
+    <span class="absolute bottom-2 w-full h-[10px] rounded-3xl bg-[#5eead4] dark:bg-teal-900 z-0"></span>
   </div>
 </div>
 
 <div class="container mx-auto p-6">
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- Carte 1 -->
-    <div class="card relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
+    <div class="card relative group overflow-hidden rounded-lg shadow-lg dark:border-gray-900 border-gray-500 border-2">
       <!-- Image principale -->
       <img src="src/assets/images/crud-app-blog.jpg" alt="Image 1" class="w-full h-[350px] object-cover">
       <!-- Titre -->
@@ -34,7 +34,7 @@
     </div>
 
     <!-- Carte 2 -->
-  <div class="card relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
+  <div class="card relative group overflow-hidden rounded-lg shadow-lg dark:border-gray-900  border-gray-500 border-2">
     <img src="src/assets/images/myfastfood-mobileapp.png" alt="Image 3" class="w-full h-[350px] object-cover">
     <div class="p-4 bg-white">
       <h3 class="text-center font-semibold text-teal-700">MYFASTFOOD APP</h3>
@@ -54,7 +54,7 @@
   </div>
 
     <!-- Carte 3 -->
-    <div class="card relative group overflow-hidden rounded-lg shadow-lg  border-gray-500 border-2">
+    <div class="card relative group overflow-hidden rounded-lg shadow-lg dark:border-gray-900 border-gray-500 border-2">
       <!-- Image principale -->
       <img src="src/assets/images/myfastfood-admin.png" alt="Image 3" class="w-full h-[350px] object-cover">
       <div class="p-4 bg-white">
@@ -80,8 +80,8 @@
 
 
 <!-- Vidéo Modal -->
-<div id="video-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-  <div class="relative bg-transparent p-4 max-w-4xl w-full mx-auto rounded-lg shadow-lg">
+<div id="video-modal" class="hidden fixed inset-0 bg-black/70 dark:bg-black/90 flex justify-center items-center z-50">
+  <div class="relative bg-white dark:bg-gray-900 p-4 max-w-4xl w-full mx-auto rounded-lg shadow-lg">
     <button id="close-modal" class="absolute top-0 right-0 p-2 text-white bg-red-500 hover:bg-red-700 rounded-full">
       <i class="fas fa-times"></i>
     </button>
