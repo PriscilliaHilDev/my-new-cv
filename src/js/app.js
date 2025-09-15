@@ -6,31 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   handleHashChange(location.hash); // Charge la page correspondante
 
-   const root = document.documentElement;
-  const toggle = document.getElementById("theme-toggle");
 
-  // Vérifie le choix sauvegardé ou le système
-  const stored = localStorage.getItem("theme");
-  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const isDark = stored === "dark" || (!stored && systemPrefersDark);
-
-  setTheme(isDark);
-  toggle.checked = isDark;
-
-  toggle.addEventListener("change", () => {
-    setTheme(toggle.checked);
-  });
-
-  function setTheme(isDark) {
-    if (isDark) {
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }
-  
   /**
    * SECTION 1: Navigation - Gestion des liens actifs
    * Met à jour l'état actif des liens de navigation en fonction du hash de l'URL.
