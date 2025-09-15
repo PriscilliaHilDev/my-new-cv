@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,12 +22,29 @@
   
   <nav class="p-8 bg-gray-900 dark:bg-gray-800">
     <div class="container mx-auto flex flex-wrap justify-center items-center sm:justify-between sm:space-y-0">
-      <!-- Lien "télécharger cv pdf" -->
-      <div class="sm:pr-0 pr-4">
-        <span class="text-[20px] title-cv lg:text-[25px] hidden md:block text-white dark:text-gray-100">
-          CurriculumVitea
-        </span>
+
+    <div class="flex items-center gap-x-3 pr-4 sm:pr-0">
+  <span class="hidden md:block text-[20px] lg:text-[25px] title-cv text-white dark:text-gray-100">
+    Curriculum Vitae
+  </span>
+<label class="theme-switch">
+  <input type="checkbox" class="theme-switch__checkbox" id="theme-toggle">
+  <div class="theme-switch__container">
+    <div class="theme-switch__clouds"></div>
+    <div class="theme-switch__stars-container">  </div>
+    <div class="theme-switch__circle-container">
+      <div class="theme-switch__sun-moon-container">
+        <div class="theme-switch__moon">
+          <div class="theme-switch__spot"></div>
+          <div class="theme-switch__spot"></div>
+          <div class="theme-switch__spot"></div>
+        </div>
       </div>
+    </div>
+  </div>
+</label>
+
+  </div>
   
       <!-- Liens de navigation -->
       <div class="flex flex-wrap justify-center items-center space-x-8" id="navbar-content">
@@ -41,7 +58,7 @@
   
         <!-- Parcours -->
         <a href="#parcours" class="flex flex-col items-center nav-item">
-          <i class="fas fa-briefcase text-[24px] text-white dark:text-gray-100 sm:text-lg px-2 md:text-xl"></i>
+          <i class="fas fa-briefcase text-[24px] text-white  dark:text-gray-100 sm:text-lg px-2 md:text-xl"></i>
           <span class="text-[12px] md:text-[18px] sm:text-[16px] hidden sm:block text-white dark:text-gray-100">
             Expérience
           </span>
