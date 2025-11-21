@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.17 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -334,6 +334,9 @@
   .inline-block {
     display: inline-block;
   }
+  .h-2\.5 {
+    height: calc(var(--spacing) * 2.5);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -346,9 +349,6 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-\[10px\] {
-    height: 10px;
-  }
   .h-\[12px\] {
     height: 12px;
   }
@@ -360,6 +360,9 @@
   }
   .h-\[350px\] {
     height: 350px;
+  }
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-auto {
     height: auto;
@@ -622,6 +625,12 @@
   .bg-yellow-600 {
     background-color: var(--color-yellow-600);
   }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
   .object-contain {
     object-fit: contain;
   }
@@ -849,6 +858,13 @@
   .duration-1000 {
     --tw-duration: 1000ms;
     transition-duration: 1000ms;
+  }
+  .group-hover\:pointer-events-auto {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        pointer-events: auto;
+      }
+    }
   }
   .group-hover\:opacity-100 {
     &:is(:where(.group):hover *) {
@@ -1118,6 +1134,11 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -1208,22 +1229,22 @@
     }
   }
   .dark\:border-gray-100 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       border-color: var(--color-gray-100);
     }
   }
   .dark\:border-gray-800 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       border-color: var(--color-gray-800);
     }
   }
   .dark\:border-gray-900 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       border-color: var(--color-gray-900);
     }
   }
   .dark\:bg-black\/90 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       background-color: color-mix(in srgb, #000 90%, transparent);
       @supports (color: color-mix(in lab, red, red)) {
         background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
@@ -1231,42 +1252,42 @@
     }
   }
   .dark\:bg-gray-800 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       background-color: var(--color-gray-800);
     }
   }
   .dark\:bg-gray-900 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       background-color: var(--color-gray-900);
     }
   }
   .dark\:bg-teal-900 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       background-color: var(--color-teal-900);
     }
   }
   .dark\:text-gray-100 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       color: var(--color-gray-100);
     }
   }
   .dark\:text-gray-400 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       color: var(--color-gray-400);
     }
   }
   .dark\:text-gray-900 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       color: var(--color-gray-900);
     }
   }
   .dark\:text-white {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       color: var(--color-white);
     }
   }
   .dark\:hover\:bg-teal-700 {
-    &:where(.dark, .dark *) {
+    @media (prefers-color-scheme: dark) {
       &:hover {
         @media (hover: hover) {
           background-color: var(--color-teal-700);
