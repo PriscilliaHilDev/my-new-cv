@@ -165,17 +165,25 @@ function initializeFilterExp() {
 
   // Fonction pour mettre à jour l'état des boutons et des pages
   function toggleState(activeButton, inactiveButton, activePage, inactivePage) {
-    // Afficher la page active et masquer la page inactive
+
+    // Afficher / masquer les pages
     activePage.classList.remove('hidden');
     inactivePage.classList.add('hidden');
 
-    // Mettre à jour le style du bouton actif
-    activeButton.classList.add('bg-gray-700', 'text-white');
-    activeButton.classList.remove('bg-gray-100', 'text-gray-800', 'border-6', 'sm:border-8');
+     // ➤ Ajout du background-image pour le bouton actif
+  activeButton.style.backgroundImage = "url('src/assets/images/1291.jpg')";
+  activeButton.style.backgroundPosition = "center";
 
-    // Réinitialiser le style du bouton inactif
-    inactiveButton.classList.add('bg-gray-100', 'text-gray-800', 'border-6', 'sm:border-8');
-    inactiveButton.classList.remove('bg-gray-700', 'text-white');
+    // ➤ Suppression du background-image sur le bouton inactif
+  inactiveButton.style.backgroundImage = "none";
+
+    // ✔️ Style bouton actif : vert
+    activeButton.classList.add('text-teal-900', 'border-teal-900');
+    activeButton.classList.remove('text-gray-900', 'border-gray-700', 'bg-gray-100');
+
+    // ✔️ Style bouton inactif : gris
+    inactiveButton.classList.add('text-gray-900', 'border-gray-700', 'bg-gray-100');
+    inactiveButton.classList.remove('text-teal-900', 'border-teal-900');
   }
 
   // Gestionnaires d'événements
@@ -187,6 +195,7 @@ function initializeFilterExp() {
     toggleState(btnAcademique, btnProfessionnel, pageAcademique, pageProfessionnel);
   });
 }
+
 
 
 
@@ -218,7 +227,7 @@ function initializeFilterExp() {
         }
 
         if (page === "parcours") {
-          initializeFilterExp(); // Appelle la gestion des vidéos après le chargement
+          initializeFilterExp(); // Appelle la gestion des filtre boutons après le chargement
         }
       })
       .catch(() => {
